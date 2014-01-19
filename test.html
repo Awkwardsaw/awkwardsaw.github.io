@@ -25,7 +25,7 @@
       </div>
     </header>
 	
-	<div id="navigation" style="height:200px;width:150px;float:left;">
+	 <div id="navigation" style="height:200px;width:150px;float:left;">
 	<ul class="nav">
 		
 	<li><a href="http://awkwardsaw.github.io/index.html">Home</a></li>
@@ -35,14 +35,26 @@
 	<li><a href="https://www.facebook.com/dan.mueller.39">My Facebook</a></li>
 	</ul>
 	</div>
+	
     <div class="container">
       <section id="main_content">
-        <h3>
-test.</h3>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$("#div1").load("demo_test.txt");
+				});
+			});
+		</script>
+
+		<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+		<button>Get External Content</button>
+
 
       </section>
     </div>
 
-    
+
   </body>
 </html>
